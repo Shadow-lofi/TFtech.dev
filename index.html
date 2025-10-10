@@ -119,8 +119,7 @@
       <p>&copy; 2025 Tavaris Freeman. All rights reserved. | Built with HTML, CSS, and JavaScript</p>
     </footer>
 
-    <script>
-      // Smooth scrolling for nav links
+    <script> 
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
           e.preventDefault();
@@ -131,7 +130,6 @@
         });
       });
 
-      // Scroll-triggered fade-in animations
       const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -153,7 +151,6 @@
         observer.observe(el);
       });
 
-      // Interactive skills with tooltips
       document.querySelectorAll('.skills-grid li').forEach(li => {
         li.addEventListener('mouseenter', () => {
           const tooltip = li.getAttribute('data-tooltip');
@@ -163,7 +160,6 @@
             tip.className = 'tooltip';
             tip.textContent = tooltip;
             li.appendChild(tip);
-
           }
         });
 
@@ -172,8 +168,7 @@
           if(tip) tip.remove();
         });
       });
-
-      // Contact form handling
+ 
       document.getElementById('contactForm').addEventListener('submit', (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
@@ -182,7 +177,6 @@
         const message = formData.get('message');
         
         if(name && email && message) {
-          // Placeholder for live submission (e.g., EmailJS)
           alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
           e.target.reset();
           document.getElementById('formMessage').textContent = 'Message sent successfully!';
@@ -194,4 +188,5 @@
       });
     </script>
   </body>
+
 </html>
