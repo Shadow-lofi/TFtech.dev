@@ -255,7 +255,7 @@
         color: #fddf48;
       }
 
-      .contact-form {
+      /*.contact-form {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
@@ -319,7 +319,7 @@
         background: rgba(244,67,54,0.2);
         color: #f44336;
         border: 1px solid #f44336;
-      }
+      }*/
 
       footer {
         text-align: center;
@@ -340,4 +340,5 @@
         .contact-form { padding: 1.5rem; }
         .tooltip { font-size: 0.8rem; padding: 0.4rem 0.8rem; }
       }
+
    
